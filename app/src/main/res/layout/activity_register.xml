@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    tools:context="com.satiti.user.satitiboyolali.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/formLogin"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/informasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="Isikan Data Dibawah Untuk Registrasi"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/email_relative_layout"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_email"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:hint="Nomor Induk Kependudukan"
+                    android:id="@+id/user_idView"
+                    android:layout_toRightOf="@+id/imageView3"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/jenis_relative_layout"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/text_petugas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Petugas"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@id/jenisView"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_account_circle_white_48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView10"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+
+                <Spinner
+                    android:id="@+id/jenisView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kelurahan"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:layout_toRightOf="@+id/imageView10"
+                    android:layout_below="@id/text_petugas"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/NIpegawai"
+                android:layout_height="55dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_email"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView90"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:hint="Nomor Induk Pegawai"
+                    android:id="@+id/NIPView"
+                    android:layout_toRightOf="@+id/imageView90"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/password_relative_layout"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_secret"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView6"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/white"
+                        android:inputType="textPassword"
+                        android:textColor="@color/white"
+                        android:hint="Password"
+                        android:id="@+id/passwordView"
+                        android:layout_toRightOf="@+id/imageView6"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/name_relative_layout"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_person_name"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView4"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:hint="Nama"
+                        android:id="@+id/namaView"
+                        android:layout_toRightOf="@+id/imageView4"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/phone_relative_layout"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_phone"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView5"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:inputType="number"
+                        android:hint="No Telepon"
+                        android:id="@+id/teleponView"
+                        android:layout_toRightOf="@+id/imageView5"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/alamat_relative_layout"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/text_kecamatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kecamatan"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@id/kecamatanView"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_pinpoint"
+                    android:layout_below="@id/text_kecamatan"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView8"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:hint="Kecamatan"
+                        android:id="@+id/kecamatanView"
+                        android:layout_toRightOf="@+id/imageView8"
+                        android:layout_below="@+id/text_kecamatan"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/desa_relative_layout"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/text_desa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desa"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_alignLeft="@id/desaView"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_pinpoint"
+                    android:layout_below="@id/text_desa"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView11"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:hint="Kelurahan"
+                        android:id="@+id/desaView"
+                        android:layout_toRightOf="@+id/imageView11"
+                        android:layout_below="@id/text_desa"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_shape"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/registerButton"
+                android:text="DAFTAR"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/footer"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:text="Sudah punya akun?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#605f5f"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/textView9" />
+
+            <TextView
+                android:text="MASUK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginView"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignBaseline="@+id/textView9"
+                android:layout_alignBottom="@+id/textView9"
+                android:layout_toRightOf="@+id/textView9"
+                android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar" />
+</RelativeLayout>

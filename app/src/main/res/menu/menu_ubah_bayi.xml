@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_update"
+        app:showAsAction="never"
+        android:title="Perbarui Data" />
+
+    <item
+        android:id="@+id/menu_uplokasi"
+        app:showAsAction="never"
+        android:title="Perbarui lokasi" />
+
+    <item
+        android:id="@+id/menu_delete"
+        app:showAsAction="never"
+        android:title="Hapus Data" />
+</menu>

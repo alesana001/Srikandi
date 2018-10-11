@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="3dp">
+
+    <View
+        android:id="@+id/dividerTop"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E4E6E3" />
+
+
+
+    <TextView
+        android:id="@+id/namaIbuView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/verifikasiDataView"
+        android:layout_alignBottom="@+id/verifikasiDataView"
+        android:layout_marginLeft="16dp"
+        android:text="Nama Bumil"
+        android:textColor="#827f93"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alamatIbuhmlView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namaIbuView"
+        android:layout_below="@+id/namaIbuView"
+        android:layout_marginBottom="10dp"
+        android:text="Alamat"
+        android:textColor="#827f93" />
+
+    <TextView
+        android:id="@+id/verifikasiDataView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dividerTop"
+        android:layout_margin="26dp"
+        android:text="Verifikasi Data"
+        android:textColor="#827f93" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ebebeb" />
+
+</RelativeLayout>

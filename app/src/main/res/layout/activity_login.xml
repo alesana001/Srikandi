@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    tools:context="com.satiti.user.satitiboyolali.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_logo_text_2"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/formLogin"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/email_relative_layout"
+            android:layout_height="55dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_person_name"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/white"
+                        android:id="@+id/user_idView"
+                        android:inputType="number"
+                        android:textColor="@color/white"
+                        android:hint="Nomor Induk Kependudukan"
+                        android:layout_toRightOf="@+id/imageView3" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/name_relative_layout"
+            android:layout_height="55dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_secret"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView4"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:id="@+id/passwordView"
+                        android:inputType="textPassword"
+                        android:hint="Password"
+                        android:layout_toRightOf="@+id/imageView4"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/loginButton"
+            android:background="@drawable/round_shape"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="MASUK"
+            android:layout_marginTop="45dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/RegisterButton"
+            android:background="@drawable/round_shape"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="DAFTAR"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:text="DINAS KESEHATAN KABUPATEN BOYOLALI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#605f5f"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/textView9" />
+
+             </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar" />
+</RelativeLayout>
