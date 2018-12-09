@@ -3,10 +3,10 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.simpus.satitiv2"
+        applicationId "com.simpus.srikandi"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 1
+        versionCode 8
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

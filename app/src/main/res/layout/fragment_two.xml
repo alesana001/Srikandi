@@ -3,13 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.simpus.satitiv2.fragments.TwoFragment">
+    tools:context="com.simpus.srikandi.fragments.TwoFragment">
 
            <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -26,7 +30,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Total Bumil Terpetakan"
+                        android:text="Total Bumil Terdaftar"
                         android:id="@+id/text1"
                         android:layout_marginBottom="5dp"
                         android:layout_centerHorizontal="true"/>
@@ -39,7 +43,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/ic_directions_bus_black_24dp"
+                            android:src="@drawable/ic_mother"
                             android:layout_gravity="center"/>
                         <TextView
                             android:id="@+id/totalIbuhml"
@@ -58,7 +62,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Total Peta Bumil Terverifikasi"
+                        android:text="Total Peta Bumil Terpetakan"
                         android:textSize="13sp"
                         android:id="@+id/texttotal"
                         android:layout_marginBottom="5dp"
@@ -72,10 +76,10 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/ic_launcher_background"
+                            android:src="@drawable/ic_verif_data"
                             android:layout_gravity="center"/>
                         <TextView
-                            android:id="@+id/totalBayi"
+                            android:id="@+id/totalBumilPeta"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0"
@@ -85,7 +89,7 @@
                     </LinearLayout>
                 </RelativeLayout>
             </LinearLayout>
-            <TextView
+              <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -94,6 +98,11 @@
                 android:text="SILAHKAN PILIH MENU DIBAWAH"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="15sp" />
+               <View android:layout_width="match_parent"
+                   android:layout_height="4dp"
+                   android:background="#bbb"/>
+    </LinearLayout>
+
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -134,13 +143,13 @@
                                         android:layout_width="64dp"
                                         android:layout_height="64dp"
                                         android:padding="10dp"
-                                        android:src="@drawable/ic_phone_android_black_24dp" />
+                                        android:src="@drawable/ic_cari_data_petabumil" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="10dp"
-                                        android:text="Lihat Data Peta Bumil"
+                                        android:text="Lihat Bumil Terdaftar"
                                         android:textStyle="bold" />
 
                                     <View
@@ -154,7 +163,7 @@
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
                                         android:padding="0dp"
-                                        android:text="Melihat Peta Persebaran Temuan Bumil"
+                                        android:text="Melihat Data Bumil di Bank Data"
                                         android:textColor="@android:color/darker_gray" />
                                 </LinearLayout>
                             </android.support.v7.widget.CardView>
@@ -166,7 +175,7 @@
                             android:layout_margin="5dp"
                             android:layout_height="wrap_content">
                             <android.support.v7.widget.CardView
-                                android:id="@+id/infoDataBayi"
+                                android:id="@+id/infoDataPeta"
                                 android:layout_width="match_parent"
                                 android:layout_height="180dp"
                                 android:clickable="true"
@@ -183,13 +192,13 @@
                                         android:layout_width="64dp"
                                         android:layout_height="64dp"
                                         android:padding="10dp"
-                                        android:src="@drawable/ic_train_black_24dp" />
+                                        android:src="@drawable/ic_verifikasi_data_peta" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="10dp"
-                                        android:text="Verifikasi Data Peta"
+                                        android:text="Lihat Bumil Terpetakan"
                                         android:textStyle="bold" />
 
                                     <View
@@ -203,7 +212,7 @@
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
                                         android:padding="0dp"
-                                        android:text="Verifikasi Data Peta Bumil Terlapor "
+                                        android:text="Melihat Data Bumil yang Sudah di Peta-kan "
                                         android:textColor="@android:color/darker_gray" />
                                 </LinearLayout>
                             </android.support.v7.widget.CardView>

@@ -3,12 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.simpus.satitiv2.fragments.ThreeFragment">
+    tools:context="com.simpus.srikandi.fragments.ThreeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,10 +44,10 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_directions_bus_black_24dp"
+                        android:src="@drawable/ic_bayi"
                         android:layout_gravity="center"/>
                     <TextView
-                        android:id="@+id/totalIbuhml"
+                        android:id="@+id/totalBayi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"
@@ -71,10 +76,10 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_launcher_background"
+                        android:src="@drawable/ic_verif_data"
                         android:layout_gravity="center"/>
                     <TextView
-                        android:id="@+id/totalBayi"
+                        android:id="@+id/totalBayiPeta"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"
@@ -93,6 +98,10 @@
             android:text="SILAHKAN PILIH MENU DIBAWAH"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="15sp" />
+        <View android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#bbb"/>
+    </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -117,7 +126,7 @@
                         android:layout_margin="5dp"
                         android:layout_height="wrap_content">
                         <android.support.v7.widget.CardView
-                            android:id="@+id/InfoBumil"
+                            android:id="@+id/InfoDataBalita"
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:clickable="true"
@@ -135,13 +144,13 @@
                                     android:layout_width="64dp"
                                     android:layout_height="64dp"
                                     android:padding="10dp"
-                                    android:src="@drawable/ic_arrow_downward_black_24dp" />
+                                    android:src="@drawable/ic_data_balita" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:text="Data Bayi"
+                                    android:text="Data Balita"
                                     android:textStyle="bold" />
 
                                 <View
@@ -167,7 +176,7 @@
                         android:layout_margin="5dp"
                         android:layout_height="wrap_content">
                         <android.support.v7.widget.CardView
-                            android:id="@+id/infoAplikasi"
+                            android:id="@+id/infoDataPeta"
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:clickable="true"
@@ -184,7 +193,7 @@
                                     android:layout_width="64dp"
                                     android:layout_height="64dp"
                                     android:padding="10dp"
-                                    android:src="@drawable/ic_directions_bus_black_24dp" />
+                                    android:src="@drawable/ic_verifikasi_data_peta" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -214,6 +223,12 @@
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_verif_data" />
 
     </LinearLayout>
 

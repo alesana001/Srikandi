@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/tmbhibuhmlfragment"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.satiti.user.satitiboyolali.UpdateDataIbuHmlActivity">
+    tools:context="com.simpus.srikandi.activity.UpdateDataIbuHmlActivity">
 
     <!-- TODO: Update blank fragment layout -->
 

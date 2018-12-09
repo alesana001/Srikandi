@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFC0CB</color>
-    <color name="colorPrimaryDark">#ec6980</color>
+    <color name="colorPrimary">#CDDC39</color>
+    <color name="colorPrimaryDark">#AFB42B</color>
     <color name="primary_light">#B2EBF2</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorMain">#FFC0CB</color>
@@ -18,6 +18,8 @@
     <color name="green">#00bfa5</color>
     <color name="darkblue">#2980b9</color>
     <color name="darkpurple">#a569bd</color>
-    <color name="pinky">#fe104d</color>
+    <color name="pinky">#FFC0CB</color>
+    <color name="limedark">#AFB42B</color>
+
 
 </resources>

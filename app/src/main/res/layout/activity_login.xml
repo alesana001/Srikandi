@@ -6,118 +6,139 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/colorPrimary"
-    tools:context="com.satiti.user.satitiboyolali.LoginActivity">
-
-    <ImageView
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/ic_logo_text_2"
-        android:id="@+id/imageView2"
-        android:layout_alignParentTop="true"
-        android:layout_weight="1"
-        android:layout_centerHorizontal="true" />
+    tools:context="com.simpus.srikandi.activity.LoginActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="40dp"
-        android:id="@+id/formLogin"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
 
-        <RelativeLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:id="@+id/email_relative_layout"
-            android:layout_height="55dp">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_person_name"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:id="@+id/imageView3"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="5dp"/>
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/logo_srikandi" />
 
-                    <EditText
+                <LinearLayout
+                    android:id="@+id/formLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/email_relative_layout"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColorHint="@color/white"
-                        android:id="@+id/user_idView"
-                        android:inputType="number"
-                        android:textColor="@color/white"
-                        android:hint="Nomor Induk Kependudukan"
-                        android:layout_toRightOf="@+id/imageView3" />
+                        android:layout_height="50dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/ic_person_name" />
+
+                            <EditText
+                                android:id="@+id/user_idView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/imageView3"
+                                android:hint="Nomor Induk Kependudukan"
+                                android:inputType="number"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white" />
 
 
-            </LinearLayout>
-
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:id="@+id/name_relative_layout"
-            android:layout_height="55dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_secret"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:id="@+id/imageView4"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="5dp"/>
-
-
-                    <EditText
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/name_relative_layout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textColorHint="@color/white"
-                        android:textColor="@color/white"
-                        android:id="@+id/passwordView"
-                        android:inputType="textPassword"
-                        android:hint="Password"
-                        android:layout_toRightOf="@+id/imageView4"/>
+                        android:layout_height="50dp">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/ic_secret" />
+
+
+                            <EditText
+                                android:id="@+id/passwordView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toRightOf="@+id/imageView4"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_shape"
+                        android:text="MASUK"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/RegisterButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_shape"
+                        android:text="DAFTAR"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
             </LinearLayout>
-
-        </RelativeLayout>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:id="@+id/loginButton"
-            android:background="@drawable/round_shape"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="MASUK"
-            android:layout_marginTop="45dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:id="@+id/RegisterButton"
-            android:background="@drawable/round_shape"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="DAFTAR"
-            android:layout_marginTop="10dp"/>
-
+        </ScrollView>
     </LinearLayout>
 
     <RelativeLayout
@@ -134,7 +155,7 @@
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true">
             <TextView
-                android:text="DINAS KESEHATAN KABUPATEN BOYOLALI"
+                android:text="DINAS KESEHATAN SURAKARTA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"

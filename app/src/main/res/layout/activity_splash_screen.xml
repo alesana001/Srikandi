@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorMain"
-    tools:context="com.satiti.user.satitiboyolali.SplashScreenActivity">
+    android:background="@color/colorPrimary"
+    tools:context="com.simpus.srikandi.activity.SplashScreenActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -13,15 +13,15 @@
         android:layout_height="200dp"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        app:srcCompat="@drawable/ic_splash_screen" />
+        app:srcCompat="@drawable/logo_srikandi" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DINAS KESEHATAN BOYOLALI"
+        android:text="DINAS KESEHATAN KOTA SURAKARTA"
         android:layout_below="@+id/imageView"
         android:gravity="center"
-        android:textColor="@color/mdtp_white"
+        android:textColor="#795548"
         android:layout_marginTop="150dp"
         android:textStyle="bold"/>
 

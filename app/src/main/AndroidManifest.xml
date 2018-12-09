@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.simpus.satitiv2">
+    package="com.simpus.srikandi">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -14,30 +14,62 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/MyMaterialTheme">
-        <activity android:name=".activity.MainActivity">
+        android:theme="@style/MyMaterialTheme"
+        android:name=".activity.AppController">
+        <activity android:name=".activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ListIbuhmlgizkiaActivity"/>
-        <activity android:name=".activity.ListIbuhmlActivity"/>
-        <activity android:name=".activity.DetailIbuHmlActivity"/>
-        <activity android:name=".activity.TmbhIbuHmlActivity" />
-        <activity android:name=".activity.UpdateDataIbuHmlActivity"/>
-        <activity android:name=".activity.SettingActivity"/>
+        <activity android:name=".activity.MainActivity"/>
+
+                <activity android:name=".activity.ListIbuhmlgizkiaActivity"
+            android:theme="@style/AppTheme"
+                    android:label="Daftar Bumil Terverifikasi"/>
+        <activity android:name=".activity.ListIbuhmlActivity"
+            android:theme="@style/AppTheme"
+            android:label="Data Bumil Terlapor"/>
+        <activity android:name=".activity.DetailIbuHmlActivity"
+            android:theme="@style/AppTheme"
+            android:label="Detail Data Bumil"/>
+        <activity android:name=".activity.TmbhIbuHmlActivity"
+            android:theme="@style/AppTheme"
+            android:label="Lapor Ibu Hamil"/>
+        <activity android:name=".activity.UpdateDataIbuHmlActivity"
+            android:theme="@style/AppTheme"
+            android:label="Perbarui Data Bumil"/>
+        <activity android:name=".activity.SettingActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".activity.RegisterActivity"
             android:label="Registrasi user">
-
-
         </activity>
         <activity
             android:name=".activity.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
         </activity>
+        <activity android:name=".activity.DetailIbuHmlPetaActivity"
+            android:theme="@style/AppTheme"
+            android:label="Detail Data Bumil"/>
+        <activity android:name=".activity.DetailIbuHmlPetagizkiaActivity"
+            android:theme="@style/AppTheme"
+            android:label="Detail Data Bumil"/>
+        <activity android:name=".activity.DetailBalitaActivity"
+            android:theme="@style/AppTheme"
+            android:label="Detail Data Balita"/>
+        <activity android:name=".activity.GrafikBumilActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.ListIbuhmlPetaActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.ListIbuhmlPetagizkiaActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.ListBalitaActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.ListBalitagizkiaActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.DetailBalitagizkiaActivity"
+            android:theme="@style/AppTheme"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyASqiJDO0XOnjJqy5BtLQwTTQUadLn9eig"/>

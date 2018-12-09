@@ -42,7 +42,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/dividerTop"
         android:layout_margin="26dp"
-        android:text="Verifikasi Data"
+        android:text="Pemetaan Data"
         android:textColor="#827f93" />
 
     <View

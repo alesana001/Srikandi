@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SATITI BOYOLALI</string>
+    <string name="app_name">SRIKANDI</string>
 
     <string name="action_settings">Settings</string>
 
@@ -28,6 +28,18 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="about">APLIKASI INI BERGUNA UNTUK MEMUDAHKAN BIDAN UNTUK MELAKUKAN PENDATAAN BAIK IBU HAMIL MAUPUN BAYI SECARA ONLINE BERBASIS ANDROID</string>
     <string name="hello_world">Hello world!</string>
+    <string-array name="StatusRisti">
+        <item>Non Risti</item>
+        <item>Ringan</item>
+        <item>Sedang</item>
+        <item>Berat</item>
+    </string-array>
+
+    <string-array name="StatusStunting">
+        <item>Non Stunting</item>
+        <item>Stunting</item>
+
+    </string-array>
 
 
 </resources>
