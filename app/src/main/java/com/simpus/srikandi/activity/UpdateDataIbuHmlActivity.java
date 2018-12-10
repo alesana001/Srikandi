@@ -121,7 +121,7 @@ public class UpdateDataIbuHmlActivity extends AppCompatActivity {
 
         //perhatikan method.POST dan alamat webservice
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/info_awal_bumil_update.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/info_awal_bumil_update.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){
@@ -185,7 +185,7 @@ public class UpdateDataIbuHmlActivity extends AppCompatActivity {
     }
     public void getKecamatan(){
         final JsonArrayRequest jsonObjReq = new JsonArrayRequest(Request.Method.GET,
-                "http://103.71.255.66/wsKIA/list_kecamatan.php", new Response.Listener<JSONArray>() {
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/list_kecamatan.php", new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 Log.d("DEBUGS", response.toString());
@@ -291,7 +291,7 @@ public class UpdateDataIbuHmlActivity extends AppCompatActivity {
         Log.d("DEBUGS id", id_kecamatan);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA//list_desa.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/list_desa.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){

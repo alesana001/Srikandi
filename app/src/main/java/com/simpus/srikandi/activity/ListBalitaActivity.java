@@ -77,7 +77,7 @@ public class ListBalitaActivity extends AppCompatActivity {
         String url;
         String Desa =getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Desa","");
         String Jenis =getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Jenis_pelapor","");
-        url = "http://103.71.255.66/wsKIA/list_balita.php?Kode_Wilayah="+Desa;
+        url = "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/list_balita.php?Kode_Wilayah="+Desa;
 
         JsonArrayRequest jsonObjReq = new JsonArrayRequest(Request.Method.GET,
                 url, new Response.Listener<JSONArray>() {

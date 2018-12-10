@@ -131,7 +131,7 @@ public class RegisterActivity extends AppCompatActivity {
         progressDialog.setMessage("Loading...");
         progressDialog.show();
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/create_ptgs.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/create_ptgs.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){
@@ -261,7 +261,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void getKecamatan(){
         final JsonArrayRequest jsonObjReq = new JsonArrayRequest(Request.Method.GET,
-                "http://103.71.255.66/wsKIA/list_kecamatan.php", new Response.Listener<JSONArray>() {
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/list_kecamatan.php", new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 Log.d("DEBUGS", response.toString());
@@ -360,7 +360,7 @@ public class RegisterActivity extends AppCompatActivity {
         Log.d("DEBUGS id", id_kecamatan);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/list_desa.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/list_desa.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){

@@ -113,11 +113,11 @@ public class OneFragment extends Fragment{
         String jenisPelapor = getActivity().getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Jenis_pelapor","");
         String Kode_Desa = getActivity().getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Desa","");
         if(jenisPelapor.equals("BK")||jenisPelapor.equals("B")||jenisPelapor.equals("BM")){
-            url = "http://103.71.255.66/wsKIA/detail_total_pelaporan_bumil.php?Jenis_pelapor="+jenisPelapor+"&Kode_Desa="+Kode_Desa;
+            url = "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/detail_total_pelaporan_bumil.php?Jenis_pelapor="+jenisPelapor+"&Kode_Desa="+Kode_Desa;
         }else{
 
             String User_id_pelapor = getActivity().getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("User_id_pelapor","");
-            url = "http://103.71.255.66/wsKIA/detail_total_pelaporan_bumil.php?Jenis_pelapor="+jenisPelapor+"&User_id_pelapor="+User_id_pelapor;
+            url = "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/detail_total_pelaporan_bumil.php?Jenis_pelapor="+jenisPelapor+"&User_id_pelapor="+User_id_pelapor;
         }
         Log.d("DEBUGS", url);
 

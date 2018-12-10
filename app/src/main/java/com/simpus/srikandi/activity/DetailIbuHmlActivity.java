@@ -123,7 +123,7 @@ public class DetailIbuHmlActivity extends AppCompatActivity implements OnMapRead
 
         //perhatikan method.POST dan alamat webservice
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/info_awal_bumil_verifikasi_data.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/info_awal_bumil_verifikasi_data.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){
@@ -200,7 +200,7 @@ public class DetailIbuHmlActivity extends AppCompatActivity implements OnMapRead
 
         //perhatikan method.POST dan alamat webservice
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/info_awal_bumil_update_lokasi.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/info_awal_bumil_update_lokasi.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){
@@ -275,7 +275,7 @@ public class DetailIbuHmlActivity extends AppCompatActivity implements OnMapRead
 
         //perhatikan method.POST dan alamat webservice
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/info_awal_bumil_delete.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/info_awal_bumil_delete.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){
@@ -461,7 +461,7 @@ public class DetailIbuHmlActivity extends AppCompatActivity implements OnMapRead
     public void getDesa(final String Kode_Desa){
         final String id_desa = Kode_Desa;
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/list_detail_desa.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/list_detail_desa.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){

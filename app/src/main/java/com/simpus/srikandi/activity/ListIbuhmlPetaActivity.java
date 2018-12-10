@@ -81,10 +81,10 @@ public class ListIbuhmlPetaActivity extends AppCompatActivity {
             String Desa =getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Desa","");
             String Jenis =getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Jenis_pelapor","");
             if(Jenis.equals("BK")||Jenis.equals("B")||Jenis.equals("BM")||Jenis.equals("L")){
-                url = "http://103.71.255.66/wsKIA/list_Ibu_hamil_peta.php?Kode_Desa="+Desa;
+                url = "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/list_Ibu_hamil_peta.php?Kode_Desa="+Desa;
             }else{
                 String User_id_pelapor = getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("User_id_pelapor","");
-                url = "http://103.71.255.66/wsKIA/info_awal_bumil_list_userbiasa.php?User_id_pelapor="+User_id_pelapor;
+                url = "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/info_awal_bumil_list_userbiasa.php?User_id_pelapor="+User_id_pelapor;
             }
 
             JsonArrayRequest jsonObjReq = new JsonArrayRequest(Request.Method.GET,

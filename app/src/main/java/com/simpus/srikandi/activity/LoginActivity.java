@@ -98,7 +98,7 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.setMessage("Loading...");
         progressDialog.show();
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/login_ptgs.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/login_ptgs.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){

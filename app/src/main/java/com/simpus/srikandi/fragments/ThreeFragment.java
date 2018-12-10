@@ -89,7 +89,7 @@ public class ThreeFragment extends Fragment{
         String url;
         String Nip = getActivity().getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Nip","");
         String Kode_Desa = getActivity().getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Desa","");
-        url = "http://103.71.255.66/wsKIA/detail_total_pemetaanbayi.php?Kode_Desa="+Kode_Desa+"&Nip="+Nip;
+        url = "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/detail_total_pemetaanbayi.php?Kode_Desa="+Kode_Desa+"&Nip="+Nip;
 
         Log.d("DEBUGS", url);
 

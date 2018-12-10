@@ -72,7 +72,7 @@ public class ListIbuhmlPetagizkiaActivity extends AppCompatActivity{
         String Jenis =getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Jenis_pelapor","");
         String User_id_pelapor = getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("User_id_pelapor","");
         String Nip = getSharedPreferences("DATA", Context.MODE_PRIVATE).getString("Nip","");
-        url = "http://103.71.255.66/wsKIA/databumilpeta_selectnip.php?Nip="+Nip;
+        url = "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/databumilpeta_selectnip.php?Nip="+Nip;
 
 
         JsonArrayRequest jsonObjReq = new JsonArrayRequest(Request.Method.GET,

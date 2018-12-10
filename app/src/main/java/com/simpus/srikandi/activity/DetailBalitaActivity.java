@@ -148,7 +148,7 @@ public class DetailBalitaActivity extends AppCompatActivity {
         Ket_Stunting = statusStuntingView.getSelectedItem().toString();
         Ket_Gibur =statusGiziView.getSelectedItem().toString();
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/databayipeta_create.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/databayipeta_create.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){

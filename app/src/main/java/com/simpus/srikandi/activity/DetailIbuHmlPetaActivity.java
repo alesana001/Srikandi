@@ -145,7 +145,7 @@ public class DetailIbuHmlPetaActivity extends AppCompatActivity {
     public void postdataPeta() {
         StatusRisti = statusRistiView.getSelectedItem().toString();
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                "http://103.71.255.66/wsKIA/databumilpeta_create.php",
+                "http://gizikia.dinkes.surakarta.go.id/srikandi_php_file/databumilpeta_create.php",
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){
